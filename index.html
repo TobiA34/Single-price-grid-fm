@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+
+   body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+    background: #F2F2F2;
+   }
+ 
+    main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper{
+      width: 100%;
+      /* background: white; */
+      padding: 72px 32px 62px 32px;
+     }
+
+    .container1{
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+     }
+
+    .container1 h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 0 16px 16px;
+      border-collapse: separate; 
+      overflow: hidden;
+    }
+
+    .green {
+      color: #C0DF33;
+    }
+
+    .gray{
+      color: #9AA7BE;
+    }
+
+    .dark-blue {
+      color: #2AB3B1;
+    }
+
+   .item {
+    padding: 24px;
+    color: white;
+   }
+
+   .bg-dark-blue {
+    background: #2CB3B1;
+   }
+
+   .grey {
+    color: #9AA7BE;
+   }
+
+   .bg-blue {
+    background: #4ABFBD;
+   }
+
+   .fs-32 {
+    font-size: 32px;
+   }
+
+   .fs-15 {
+    font-size: 15px;
+   }
+ 
+
+   .blur {
+    opacity: 0.5;
+   }
+
+    .sign-up-btn{
+       /* box-shadow: 0px 0.45em 0px 0px #df6d6d; */
+       background: #C0DF33;
+   padding: 0.5em;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.8em;
+    }
+
+    @media screen and (min-width: 768px) {
+      
+
+      .wrapper {
+         margin: 0 30px;
+         width: 100%;
+         padding: 0;
+         border-radius: 16px;
+      }
+
+      .container1 {
+        padding: 40px ;
+      }
+      .container2 {
+        flex-direction: row;
+        border-collapse: separate; 
+    overflow: hidden;
+
+         border-radius: 0 0 16px 16px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .item {
+        width: 50%;
+        padding: 40px;
+      }
+      
+    }
+   
+  </style>
+</head>
+<body>
+<main>
+  <div class="wrapper">
+    <div class="container1">
+      <h1 class="dark-blue">Join our community</h1>
+            <h2 class="green fs-15">30-day, hassle-free money back guarantee</h2>
+
+      <p class="grey blur"> Gain access to our full library of tutorials along with expert code reviews. 
+  Perfect for any developers who are serious about honing their skills.</p>
+
+    </div>
+    <div class="container2">
+      <div class="item bg-dark-blue">
+        <h2>Monthly Subscription</h2>
+        <h3>  <span class="fs-32">&dollar;29</span> <span class="blur">per month</span></h3>
+        <p>Full access for less than &dollar;1 a day</p>
+        <div class="sign-up-btn">
+          <p>  Sign Up
+</p>
+        </div>
+      </div>
+      <div class="item bg-blue">
+        <h4>Why Us</h4>
+        <p class="blur">Tutorials by industry experts
+  Peer &amp; expert code review
+  Coding exercises
+  Access to our GitHub repos
+  Community forum
+  Flashcard decks
+  New videos every week</p>
+      </div>
+    </div>
+  </div>
+</main>  
+ 
+</body>
+</html>
